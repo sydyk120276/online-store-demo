@@ -4,6 +4,7 @@ import App from './App';
 import { createGlobalStyle } from 'styled-components'
 import { Provider } from 'react-redux';
 import { store } from './store';
+import './index.scss'
 
 const Global = createGlobalStyle `
   * {
