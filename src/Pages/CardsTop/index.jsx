@@ -51,7 +51,7 @@ const arrayCards = [
     id: 7,
     title: "Монитор 23.8 Acer K240YB, Black (UM.QE0EE.B01)",
     image:
-      "https://enter.kg/images/stories/virtuemart/product/%D0%B0%D1%82%D0%BF%D0%B0%D1%82%D0%B8%D0%BC%D1%82%D0%BC%D0%B8%D1%82%D0%BC%D0%B8_2402.jfif",
+      "https://enter.kg/images/stories/virtuemart/product/somic%20st458n_3699.jpg",
     price: 3500,
     comment: 0,
   },
@@ -95,7 +95,7 @@ const arrayCards = [
   },
 ];
 
-const Cards = () => {
+const CardsTop = () => {
   return (
     <section className="container w-[1532px] flex-col mt-[48px] mb-[70px] ">
       <span className="text-[#333333] text-[28px] font-bold leading-[32px]">
@@ -110,4 +110,4 @@ const Cards = () => {
   );
 }
 
-export default Cards
+export default CardsTop;
