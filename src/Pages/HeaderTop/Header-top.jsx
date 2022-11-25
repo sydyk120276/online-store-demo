@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const HeaderTop = () => {
   return (
     <section className="flex bg-[#060F42] mb-[30px] ">
-      <div className="flex text-[#F4F8FB] text-[50px] container h-[40px] font-[500] text-[14px] items-center justify-between ">
+      <div className="flex text-[#F4F8FB] text-[16px] container h-[40px] font-[500] text-[14px] items-center justify-between ">
         <ul className="flex gap-[24px] ">
           <li className="">Акции</li>
           <li className="">Кредит</li>
