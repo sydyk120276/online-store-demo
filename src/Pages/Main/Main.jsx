@@ -6,6 +6,7 @@ import HeaderMidl from '../HeaderMidl/Header-midl'
 import Home from "../Home/Home";
 import CardsTop from "../CardsTop";
 import CardsMiddle from "../CardsMiddle";
+import Footer from "../Footer";
 
 const arrayCards = [
   {
@@ -108,6 +109,7 @@ export default function Main() {
       <Home />
       <CardsTop arrayCards={arrayCards} />
       <CardsMiddle arrayCards={arrayCards} />
+      <Footer />
     </main>
   );
 }
