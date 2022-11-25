@@ -4,6 +4,7 @@ import cls from './styled/Main.module.sass'
 import HeaderTop from '../HeaderTop/Header-top'
 import HeaderMidl from '../HeaderMidl/Header-midl'
 import Home from "../Home/Home";
+import Cards from "../Cards";
 
 export default function Main() {
   return (
@@ -11,6 +12,7 @@ export default function Main() {
       <HeaderTop />
       <HeaderMidl />
       <Home />
+      <Cards />
     </main>
   );
 }

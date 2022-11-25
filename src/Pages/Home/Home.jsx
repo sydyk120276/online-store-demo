@@ -46,7 +46,7 @@ const Home = () => {
     <section className="container flex pt-[32px] gap-[37px] ">
       <div className="flex w-[370px]">
         <ul>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="20"
@@ -174,7 +174,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="24"
@@ -252,7 +252,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="24"
@@ -329,7 +329,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="24"
@@ -397,7 +397,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="24"
@@ -492,7 +492,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="24"
@@ -589,7 +589,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="24"
@@ -662,7 +662,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="24"
@@ -745,7 +745,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="24"
@@ -804,7 +804,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="24"
@@ -916,7 +916,7 @@ const Home = () => {
               </div>
             </div>
           </li>
-          <li className="flex w-[370px] h-[48px] gap-[10px] items-center">
+          <li className="flex w-[370px] h-[48px] gap-[10px] items-center border-b-2">
             <div className="flex">
               <svg
                 width="370"
@@ -990,7 +990,7 @@ const Home = () => {
             slidesPerView={1}
             loop={true}
             modules={[Thumbs, Pagination, Navigation, Autoplay]}
-            // autoplay={true}
+            autoplay={true}
             pagination={{ clickable: true }}
             className=""
           >
@@ -1017,16 +1017,16 @@ const Home = () => {
             })}
           </Swiper>
         </div>
-        <div className="flex justify-around pt-[46px] ">
+        <div className="flex justify-around pt-[30px] ">
           <div className="flex-col w-[110px] h-[110px] text-center  ">
             <img
               className="flex w-[60px] h-[60px] ml-[22px] "
               src={slaiderIcon_1}
               alt="icon"
             />
-            <span className="flex text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] ">
+            <p className="flex text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] ">
               Бесплатная сборка
-            </span>
+            </p>
           </div>
           <div className="flex-col w-[110px] h-[110px] text-center">
             <img
@@ -1034,9 +1034,9 @@ const Home = () => {
               alt="icon"
               className="flex w-[60px] h-[60px] ml-[22px] "
             />
-            <span className="text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] w-[110px] ">
+            <p className="text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] ">
               Рассрочка 4 мес./0% без переплат
-            </span>
+            </p>
           </div>
           <div className="flex-col w-[110px] h-[110px] text-center ">
             <img
@@ -1044,9 +1044,9 @@ const Home = () => {
               alt="icon"
               className="flex w-[60px] h-[60px] ml-[22px] "
             />
-            <span className="text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] ">
+            <p className="text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] ">
               Бесплатная доставка
-            </span>
+            </p>
           </div>
           <div className="flex-col w-[110px] h-[110px] text-center ">
             <img
@@ -1054,9 +1054,9 @@ const Home = () => {
               alt="icon"
               className="flex w-[60px] h-[60px] ml-[22px] "
             />
-            <span className="text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] ">
+            <p className="text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] ">
               Официальная гарантия
-            </span>
+            </p>
           </div>
           <div className="flex-col w-[110px] h-[110px] text-center ">
             <img
@@ -1064,9 +1064,9 @@ const Home = () => {
               alt="icon"
               className="flex w-[60px] h-[60px] ml-[22px] "
             />
-            <span className="text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] ">
+            <p className="text-[#060F42] text-[12px] font-bold leading-[12px] pt-[13px] ">
               Лучшая цена
-            </span>
+            </p>
           </div>
         </div>
       </div>
