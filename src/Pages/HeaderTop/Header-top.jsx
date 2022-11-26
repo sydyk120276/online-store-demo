@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+import img_user from '../../img/img_user_header/1.jpg'
+
 const HeaderTop = () => {
   return (
     <section className="flex bg-[#060F42] mb-[30px] ">
@@ -19,7 +21,7 @@ const HeaderTop = () => {
             <span>/</span>
             <Link to="/">EN</Link>
           </div>
-          <div>
+          <div className="flex">
             <svg
               width="32"
               height="32"
@@ -42,6 +44,14 @@ const HeaderTop = () => {
                 strokeLinejoin="round"
               />
             </svg>
+          </div>
+          <div className="  flex gap-[20px] items-center">
+            <div className="w-[32px] h-[32px] bg-white rounded-full overflow-hidden flex items-center justify-center">
+              <img className="h-auto w-full" src={img_user} alt="img_user" />
+            </div>
+            <div className="">
+              <Link to="/">Exit</Link>
+            </div>
           </div>
         </div>
       </div>
