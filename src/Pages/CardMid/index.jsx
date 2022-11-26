@@ -6,7 +6,7 @@ import star from "../../img/card_icon/star.png";
 
 const CardMiddle = ({ item }) => {
   return (
-    <section className="flex-col w-[242px] h-[390px] bg-white rounded-[4px] drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)] ">
+    <section className="flex-col w-full h-[390px] bg-white rounded-[4px] drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)] ">
       <div className="flex justify-between pt-[11px] pb-[12px] ">
         <img src={novelty} alt="novelty" />
         <div className="flex pr-[16px] gap-[10px] items-center ">
@@ -72,8 +72,8 @@ const CardMiddle = ({ item }) => {
           </svg>
         </div>
       </div>
-      <div className="w-[218px] h-[214px] pb-[12px] ">
-        <img className="w-full h-full " src={item.image} alt="картинка" />
+      <div className="w-full h-[214px] pb-[12px] flex items-center justify-center ">
+        <img className="w-auto h-full " src={item.image} alt="картинка" />
       </div>
       <div className="text-[#333333] text-[14px] font-bold leading-[16px] px-[12px] pb-[12px]">
         {item.title}

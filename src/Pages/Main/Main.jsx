@@ -84,21 +84,21 @@ const arrayCards = [
     price: 3500,
     comment: 0,
   },
-  {
-    id: 11,
-    title: "Монитор 23.8 Acer K240YB, Black (UM.QE0EE.B01)",
-    image:
-      "https://enter.kg/images/stories/virtuemart/product/%D0%BD%D0%B0%D1%83%D1%88%D0%BD%D0%B8%D0%BA%D0%B8%20remax%20metal%20wired%20earphone%20for%20type-c%20rm-560_6064.png",
-    price: 3500,
-    comment: 0,
-  },
-  {
-    id: 12,
-    title: "Монитор 23.8 Acer K240YB, Black (UM.QE0EE.B01)",
-    image: "https://enter.kg/images/stories/virtuemart/product/40_6773.jpg",
-    price: 3500,
-    comment: 0,
-  },
+  // {
+  //   id: 11,
+  //   title: "Монитор 23.8 Acer K240YB, Black (UM.QE0EE.B01)",
+  //   image:
+  //     "https://enter.kg/images/stories/virtuemart/product/%D0%BD%D0%B0%D1%83%D1%88%D0%BD%D0%B8%D0%BA%D0%B8%20remax%20metal%20wired%20earphone%20for%20type-c%20rm-560_6064.png",
+  //   price: 3500,
+  //   comment: 0,
+  // },
+  // {
+  //   id: 12,
+  //   title: "Монитор 23.8 Acer K240YB, Black (UM.QE0EE.B01)",
+  //   image: "https://enter.kg/images/stories/virtuemart/product/40_6773.jpg",
+  //   price: 3500,
+  //   comment: 0,
+  // },
 ];
 
 export default function Main() {

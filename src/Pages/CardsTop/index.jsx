@@ -9,7 +9,7 @@ const CardsTop = ({ arrayCards }) => {
         <span className="text-[#333333] text-[28px] font-bold leading-[32px]">
           Топ продаж
         </span>
-        <div className="grid grid-cols-6 gap-x-[16px] gap-y-[70px] mt-[24px] ">
+        <div className="grid grid-cols-5 gap-x-[40px] gap-y-[70px] mt-[24px] ">
           {arrayCards.map((item) => {
             return <Card key={item.id} item={item} />;
           })}

@@ -53,8 +53,8 @@ const CardsMiddle = ({ arrayCards }) => {
           </div>
           <div className="h-[2px] w-[1146px] bg-red-600 "></div>
         </div>
-        <div className="grid grid-cols-6 pb-[94px] ">
-          {arrayCards.slice(0, 6).map((elem) => {
+        <div className="grid grid-cols-5 gap-x-[40px] pb-[94px] ">
+          {arrayCards.slice(0, 5).map((elem) => {
             return <CardMiddle key={elem.id} item={elem} />;
           })}
         </div>
