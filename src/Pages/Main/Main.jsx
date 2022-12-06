@@ -110,18 +110,18 @@ export default function Main() {
     axios('/api/v1/store')
       .then((response) => {
         // console.log(response)
-        setItems(response)
+        setItems(response.data)
       })
   }, [])
 
-  // console.log('itemsssss', items)
+  console.log('itemsssss', items)
   return (
     <main className="flex flex-col justify-center ">
       <HeaderTop />
       <HeaderMidl />
       <PageLogin />
       <Home />
-      <CardsTop arrayCards={arrayCards} />
+      <CardsTop arrayCards={items} />
       <CardsMiddle arrayCards={arrayCards} />
       <Footer />
     </main>
