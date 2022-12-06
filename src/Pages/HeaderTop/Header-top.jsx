@@ -1,12 +1,25 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 
 import img_user from '../../img/img_user_header/1.jpg'
+import { setActiveModalka, setBasketButton, setActiveRegistration } from '../../store/auth'
 
 const HeaderTop = () => {
+  const dispatch = useDispatch()
+  const { basketButton } = useSelector((s) => s.auth)
+  console.log(basketButton)
+
+  const onClick = () => {
+    dispatch(setActiveModalka(true))
+    dispatch(setActiveRegistration(false))
+  }
+  const onCloseBasket = () => {
+    dispatch(setBasketButton(false))
+  }
   return (
-    <section className="flex bg-[#060F42] mb-[30px] ">
-      <div className="flex text-[#F4F8FB] text-[16px] container h-[40px] font-[500] items-center justify-between ">
+    <section className="top-0 left-0 bg-[#060F42] fixed h-[60px] w-screen z-40 flex items-center ">
+      <div className="flex text-[#F4F8FB] text-[16px] container font-[500] items-center justify-between ">
         <ul className="flex gap-[24px] ">
           <li className="">Акции</li>
           <li className="">Кредит</li>
@@ -21,7 +34,7 @@ const HeaderTop = () => {
             <span>/</span>
             <Link to="/">EN</Link>
           </div>
-          <div className="flex">
+          <button type="button" onClick={onClick} className={basketButton ? "hidden" : "flex cursor-pointer"}>
             <svg
               width="32"
               height="32"
@@ -44,13 +57,13 @@ const HeaderTop = () => {
                 strokeLinejoin="round"
               />
             </svg>
-          </div>
-          <div className="  flex gap-[20px] items-center">
-            <div className="w-[32px] h-[32px] bg-white rounded-full overflow-hidden flex items-center justify-center">
+          </button>
+          <div className={basketButton ? "flex gap-[20px] items-center" : "hidden"}>
+            <div className=" w-[32px] h-[32px] bg-white rounded-full overflow-hidden flex items-center justify-center">
               <img className="h-auto w-full" src={img_user} alt="img_user" />
             </div>
             <div className="">
-              <Link to="/">Exit</Link>
+              <Link to="/" onClick={onCloseBasket}>Выход</Link>
             </div>
           </div>
         </div>

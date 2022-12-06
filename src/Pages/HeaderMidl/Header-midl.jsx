@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeaderMidl = () => {
   return (
-    <section className="flex shadow-xl justify-center pb-[30px] ">
+    <section className="flex shadow-xl justify-center pb-[30px] pt-[80px] ">
       <div className="flex container items-center ">
         <div>
           <svg

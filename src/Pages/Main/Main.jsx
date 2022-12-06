@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 import cls from './styled/Main.module.sass'
 
 import HeaderTop from '../HeaderTop/Header-top'
@@ -7,6 +8,7 @@ import Home from "../Home/Home";
 import CardsTop from "../CardsTop";
 import CardsMiddle from "../CardsMiddle";
 import Footer from "../Footer";
+import PageLogin from "../PageLogin";
 
 const arrayCards = [
   {
@@ -102,22 +104,22 @@ const arrayCards = [
 ];
 
 export default function Main() {
-
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    fetch('https://5fb0-91-205-48-98.eu.ngrok.io/api/product/')
-      .then((res) => res.json())
+    axios('/api/v1/store')
       .then((response) => {
+        // console.log(response)
         setItems(response)
       })
   }, [])
 
-  console.log('itemsssss', items)
+  // console.log('itemsssss', items)
   return (
     <main className="flex flex-col justify-center ">
       <HeaderTop />
       <HeaderMidl />
+      <PageLogin />
       <Home />
       <CardsTop arrayCards={arrayCards} />
       <CardsMiddle arrayCards={arrayCards} />
