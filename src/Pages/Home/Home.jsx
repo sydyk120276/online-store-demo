@@ -15,33 +15,31 @@ import slaiderIcon_3 from "../../img/Slaider/icon/icon_3.png";
 import slaiderIcon_4 from "../../img/Slaider/icon/icon_4.png";
 import slaiderIcon_5 from "../../img/Slaider/icon/icon_5.png";
 
-  const arraySlaide = [
-    {
-      id: 1,
-      img: "https://systema.kg/modules/ps_imageslider/images/f9abb858210e6d01e9bd6a2cb3b7a3a9eff59495_bytovuha.jpg",
-      title: "СКИДКА 30%",
-      text: "успейте купить",
-      buttonTitle: "ОДНИМ КЛИКОМ",
-    },
-    {
-      id: 2,
-      img: "https://systema.kg/modules/ps_imageslider/images/12bf98ac33bf102c9d031b8dec59e61f76159f70_laptop.jpg",
-      title: "РАСПРОДАЖА",
-      text: "добро пожаловать",
-      buttonTitle: "КЛИКНИ НА МЕНЯ",
-    },
-    {
-      id: 3,
-      img: "https://systema.kg/modules/ps_imageslider/images/d8b0773c005851ab77b8f72cd960012636a187d1_slid-cam.jpg",
-      title: "СКИДКА 20%",
-      text: "партия ограничена",
-      buttonTitle: "НАЖМИ",
-    },
-  ];
+const arraySlaide = [
+  {
+    id: 1,
+    img: "https://systema.kg/modules/ps_imageslider/images/f9abb858210e6d01e9bd6a2cb3b7a3a9eff59495_bytovuha.jpg",
+    title: "СКИДКА 30%",
+    text: "успейте купить",
+    buttonTitle: "ОДНИМ КЛИКОМ",
+  },
+  {
+    id: 2,
+    img: "https://systema.kg/modules/ps_imageslider/images/12bf98ac33bf102c9d031b8dec59e61f76159f70_laptop.jpg",
+    title: "РАСПРОДАЖА",
+    text: "добро пожаловать",
+    buttonTitle: "КЛИКНИ НА МЕНЯ",
+  },
+  {
+    id: 3,
+    img: "https://systema.kg/modules/ps_imageslider/images/d8b0773c005851ab77b8f72cd960012636a187d1_slid-cam.jpg",
+    title: "СКИДКА 20%",
+    text: "партия ограничена",
+    buttonTitle: "НАЖМИ",
+  },
+];
 
 const Home = () => {
-
-
   return (
     <section className="bg-white ">
       <div className="container flex pt-[32px] gap-[37px] ">

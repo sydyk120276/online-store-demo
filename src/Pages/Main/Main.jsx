@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import cls from './styled/Main.module.sass'
 
 import HeaderTop from '../HeaderTop/Header-top'
@@ -102,6 +102,18 @@ const arrayCards = [
 ];
 
 export default function Main() {
+
+  const [items, setItems] = useState([])
+
+  useEffect(() => {
+    fetch('https://5fb0-91-205-48-98.eu.ngrok.io/api/product/')
+      .then((res) => res.json())
+      .then((response) => {
+        setItems(response)
+      })
+  }, [])
+
+  console.log('itemsssss', items)
   return (
     <main className="flex flex-col justify-center ">
       <HeaderTop />
