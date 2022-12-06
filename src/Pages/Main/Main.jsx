@@ -103,7 +103,7 @@ const arrayCards = [
 
 export default function Main() {
   return (
-    <main className="flex-col justify-center ">
+    <main className="flex flex-col justify-center ">
       <HeaderTop />
       <HeaderMidl />
       <Home />

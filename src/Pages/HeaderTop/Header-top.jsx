@@ -6,7 +6,7 @@ import img_user from '../../img/img_user_header/1.jpg'
 const HeaderTop = () => {
   return (
     <section className="flex bg-[#060F42] mb-[30px] ">
-      <div className="flex text-[#F4F8FB] text-[16px] container h-[40px] font-[500] text-[14px] items-center justify-between ">
+      <div className="flex text-[#F4F8FB] text-[16px] container h-[40px] font-[500] items-center justify-between ">
         <ul className="flex gap-[24px] ">
           <li className="">Акции</li>
           <li className="">Кредит</li>
