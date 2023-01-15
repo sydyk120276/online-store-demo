@@ -106,13 +106,13 @@ const arrayCards = [
 export default function Main() {
   const [items, setItems] = useState([])
 
-  useEffect(() => {
-    axios('/api/v1/store')
-      .then((response) => {
-        // console.log(response)
-        setItems(response.data)
-      })
-  }, [])
+  // useEffect(() => {
+  //   axios('/api/v1/store')
+  //     .then((response) => {
+  //       console.log("response", response);
+  //       setItems(response.data)
+  //     })
+  // }, [])
 
   console.log('itemsssss', items)
   return (
@@ -121,7 +121,7 @@ export default function Main() {
       <HeaderMidl />
       <PageLogin />
       <Home />
-      <CardsTop arrayCards={items} />
+      <CardsTop arrayOnAxios={items} arrayCards={arrayCards} />
       <CardsMiddle arrayCards={arrayCards} />
       <Footer />
     </main>
