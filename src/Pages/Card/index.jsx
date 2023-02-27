@@ -72,11 +72,12 @@ const Card = ({ item }) => {
           </svg>
         </div>
       </div>
+      <span className="text-[#333333] text-[14px] font-bold leading-[16px] flex justify-center pb-[10px] ">{item.title}</span>
       <div className="w-full h-[214px] pb-[12px] flex items-center justify-center ">
         <img className="w-auto h-full " src={item.image} alt="картинка" />
       </div>
       <div className="text-[#333333] text-[14px] font-bold leading-[16px] px-[12px] pb-[12px]">
-        {item.title}
+        {item.description}
       </div>
       <div className="flex justify-between px-[12px] pb-[12px]">
         <div className="flex gap-[6px] items-center ">

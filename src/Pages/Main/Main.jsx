@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 import cls from './styled/Main.module.sass'
 
 import HeaderTop from '../HeaderTop/Header-top'
@@ -7,6 +8,7 @@ import Home from "../Home/Home";
 import CardsTop from "../CardsTop";
 import CardsMiddle from "../CardsMiddle";
 import Footer from "../Footer";
+import PageLogin from "../PageLogin";
 
 const arrayCards = [
   {
@@ -102,12 +104,24 @@ const arrayCards = [
 ];
 
 export default function Main() {
+  const [items, setItems] = useState([])
+
+  // useEffect(() => {
+  //   axios('/api/v1/store')
+  //     .then((response) => {
+  //       console.log("response", response);
+  //       setItems(response.data)
+  //     })
+  // }, [])
+
+  console.log('itemsssss', items)
   return (
-    <main className="flex-col justify-center ">
+    <main className="flex flex-col justify-center ">
       <HeaderTop />
       <HeaderMidl />
+      <PageLogin />
       <Home />
-      <CardsTop arrayCards={arrayCards} />
+      <CardsTop arrayOnAxios={items} arrayCards={arrayCards} />
       <CardsMiddle arrayCards={arrayCards} />
       <Footer />
     </main>

@@ -2,7 +2,9 @@ import React from 'react'
 
 import Card from '../Card';
 
-const CardsTop = ({ arrayCards }) => {
+const CardsTop = ({ arrayCards, arrayOnAxios }) => {
+  console.log("arrayCards", arrayCards);
+  console.log("arrayOnAxios", arrayOnAxios);
   return (
     <section className="bg-white">
       <div className="container w-[1532px] flex-col mt-[48px] mb-[70px] ">
@@ -10,9 +12,13 @@ const CardsTop = ({ arrayCards }) => {
           Топ продаж
         </span>
         <div className="grid grid-cols-5 gap-x-[40px] gap-y-[70px] mt-[24px] ">
-          {arrayCards.map((item) => {
-            return <Card key={item.id} item={item} />;
-          })}
+          {arrayOnAxios.length > 0
+            ? arrayOnAxios.map((item) => {
+                return <Card key={item.id} item={item} />;
+              })
+            : arrayCards.map((item) => {
+                return <Card key={item.id} item={item} />;
+              })}
         </div>
       </div>
     </section>

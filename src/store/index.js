@@ -1,8 +1,12 @@
-import { combineReducers, createStore } from 'redux'
-import { reduser } from './reduser'
+import { combineReducers, createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
+
+import likeReduser from './likeReduser.js'
+import auth from './auth.js'
 
 const rootReduser = combineReducers({
-  likes: reduser
+  likes: likeReduser,
+  auth,
 })
 
-export const store = createStore(rootReduser)
+export const store = createStore(rootReduser, applyMiddleware(thunk))

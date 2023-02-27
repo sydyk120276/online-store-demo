@@ -3,46 +3,72 @@ import React from 'react'
 const Footer = () => {
   return (
     <section className="bg-[#060F42] ">
-      <div className="container h-[480px] flex-col text-[#D9D9D9] ">
-        <div className="flex-col">
-          <div className="flex">
-            <span>Информация</span>
-            <span>Услуги и сервисы</span>
-            <span>Контакты</span>
-            <span>Следите за нами</span>
+      <div className="container h-[600px] flex flex-col text-[#D9D9D9] pt-[30px] gap-[50px] ">
+        <div className="flex justify-between">
+          <div className="flex flex-col w-[207px] gap-y-[12px] ">
+            <span className="flex font-[600] text-[18px] ">Информация</span>
+            <span className="flex font-[500] text-[12px] ">Акции</span>
+            <span className="flex font-[500] text-[12px] ">Кредит</span>
+            <span className="flex font-[500] text-[12px] ">
+              Оплата и доставка
+            </span>
+            <span className="flex font-[500] text-[12px] ">Гарантия</span>
+            <span className="flex font-[500] text-[12px] ">Частые вопросы</span>
+            <span className="flex font-[500] text-[12px] ">Новости</span>
+            <span className="flex font-[500] text-[12px] ">Блог</span>
+            <span className="flex font-[500] text-[12px] ">О нас</span>
+            <span className="flex font-[500] text-[12px] ">
+              Политика конфиденциальности
+            </span>
+            <span className="flex font-[500] text-[12px] ">Контакты</span>
           </div>
-          <div className="flex-col">
-            <div>
-              <span>Акции</span>
-              <span>Кредит</span>
-              <span>Оплата и доставка</span>
-              <span>Гарантия</span>
-              <span>Частые вопросы</span>
-              <span>Новости</span>
-              <span>Блог</span>
-              <span>О нас</span>
-              <span>Политика конфиденциальности</span>
-              <span>Контакты</span>
-            </div>
-            <div className="flex-col">
-              <span>Сервисный центр v-comp</span>
-              <span>Магазин Б/У товара</span>
-              <span>Скупка Б/У </span>
-              <span>Ремонт ПК и оргтехники</span>
-              <span>Компьютерная помощь</span>
-              <span>Сотрудничество</span>
-              <span>Главная</span>
-            </div>
-            <div className="flex-col">
-              <span>(067) 11-12-485 - Отдел продаж</span>
-              <span>(066) 484-39-22 - Отдел продаж</span>
-              <span>(063) 747-33-48 - Отдел продаж</span>
-              <span>Днепр </span>
-              <span>Европейская, 8 (бывшая Миронова 8)</span>
-              <span>Понедельник-Пятница 9:00-19:00</span>
-              <span>Суббота-Воскресенье: с 9:00-16:00</span>
-            </div>
-            <div className="flex-col">
+          <div className="flex flex-col w-[207px] gap-[12px] ">
+            <span className="flex font-[600] text-[18px]">
+              Услуги и сервисы
+            </span>
+            <span className="flex font-[500] text-[12px]">
+              Сервисный центр v-comp
+            </span>
+            <span className="flex font-[500] text-[12px]">
+              Магазин Б/У товара
+            </span>
+            <span className="flex font-[500] text-[12px]">Скупка Б/У </span>
+            <span className="flex font-[500] text-[12px]">
+              Ремонт ПК и оргтехники
+            </span>
+            <span className="flex font-[500] text-[12px]">
+              Компьютерная помощь
+            </span>
+            <span className="flex font-[500] text-[12px]">Сотрудничество</span>
+            <span className="flex font-[500] text-[12px]">Главная</span>
+          </div>
+          <div className="flex flex-col w-[207px] gap-[12px] ">
+            <span className="flex font-[600] text-[18px]">Контакты</span>
+            <span className="flex font-[500] text-[12px]">
+              (067) 11-12-485 - Отдел продаж
+            </span>
+            <span className="flex font-[500] text-[12px]">
+              (066) 484-39-22 - Отдел продаж
+            </span>
+            <span className="flex font-[500] text-[12px]">
+              (063) 747-33-48 - Отдел продаж
+            </span>
+            <span className="flex font-[500] text-[12px]">Днепр </span>
+            <span className="flex font-[500] text-[12px]">
+              Европейская, 8 (бывшая Миронова 8)
+            </span>
+            <span className="flex font-[500] text-[12px]">
+              Понедельник-Пятница 9:00-19:00
+            </span>
+            <span className="flex font-[500] text-[12px]">
+              Суббота-Воскресенье: с 9:00-16:00
+            </span>
+          </div>
+          <div className="flex flex-col w-[207px]">
+            <div className="flex flex-col pb-[30px] gap-[26px] ">
+              <span className="flex font-[600] text-[18px]">
+                Следите за нами
+              </span>
               <div className="flex">
                 <svg
                   width="32"
@@ -95,7 +121,7 @@ const Footer = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_7244_80373)">
+                  <g clipPath="url(#clip0_7244_80373)">
                     <path
                       d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
                       fill="#F4F8FB"
@@ -174,7 +200,7 @@ const Footer = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_7244_80356)">
+                  <g clipPath="url(#clip0_7244_80356)">
                     <path
                       d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
                       fill="#F4F8FB"
@@ -239,22 +265,22 @@ const Footer = () => {
                 >
                   <rect width="32" height="32.0032" rx="16" fill="#F4F8FB" />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M23.8253 9.42833C24.682 9.65898 25.3574 10.3344 25.5881 11.1911C26.0164 12.7562 25.9999 16.0181 25.9999 16.0181C25.9999 16.0181 25.9999 19.2635 25.5881 20.8286C25.3574 21.6853 24.682 22.3607 23.8253 22.5914C22.2602 23.0032 16 23.0032 16 23.0032C16 23.0032 9.75616 23.0032 8.17462 22.5749C7.31795 22.3443 6.6425 21.6688 6.41186 20.8121C6 19.2635 6 16.0016 6 16.0016C6 16.0016 6 12.7562 6.41186 11.1911C6.6425 10.3344 7.33443 9.6425 8.17462 9.41186C9.73969 9 16 9 16 9C16 9 22.2602 9 23.8253 9.42833ZM19 16.0016L14 19V13.0033L19 16.0016Z"
                     fill="#060F42"
                   />
                 </svg>
               </div>
-              <div className="flex-col">
-                <div>Подписывайтесь на скидки</div>
-                <input type="text" />
-              </div>
+            </div>
+            <div className="flex flex-col">
+              <div>Подписывайтесь на скидки</div>
+              <input type="text" />
             </div>
           </div>
         </div>
-        <div className="flex">
-          <div>
+        <div className="flex justify-between items-center">
+          <div className="flex items-center gap-[30px] ">
             <svg
               width="161"
               height="41"
@@ -290,9 +316,11 @@ const Footer = () => {
                 fill="#D9D9D9"
               />
             </svg>
+            <div>
+              2008-2021 Интернет-магазин v-comp.com.ua Все права защищены
+            </div>
           </div>
-          <div>2008-2021 Интернет-магазин v-comp.com.ua Все права защищены</div>
-          <div className="flex">
+          <div className="flex gap-[18px] items-center ">
             <svg
               width="34"
               height="20"
